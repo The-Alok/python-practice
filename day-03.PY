@@ -18,27 +18,27 @@ print("Access Granted")
 #Exercise 4: Number Guessing Game
 secret_number = 7
 guess = int(input("Guess the number: "))
-while(guess!=secret_number):
-    if(guess<secret_number):
+while guess!=secret_number:
+    if guess<secret_number:
         print("Too Low !")
-    elif(guess>secret_number):
+    elif guess>secret_number:
         print("Too High !")
     guess = int(input("Guess the number: "))
 print("Correct !")
 #Exercise 5: Multiplication Table
 count = 1
 m = int(input("Enter number: "))
-while(count<=10):
+while count<=10:
     print(f"{m} x {count} = {m * count}")
     count+=1
 #Mini Project: Calculator
 while True:
-    choice = int(input("1-Add,\n 2. Subtract\n, 3. Multiply\n, 4. Divide,\n 5. Exit,\n Choice: "))
+    choice = int(input("\nCalculator:\n""1-Add\n""2. Subtract\n""3. Multiply\n""4. Divide\n""5. Exit\n""Choice: "))
     a = int(input("Enter first number: "))
     b = int(input("Enter second number: "))
-    if choice == 1:
-        add = a+b 
-        print(add)
+    if choice == 5:
+        print("Calculator closed")
+        break
     elif choice == 2:
         sub = a-b
         print(sub)
@@ -48,9 +48,9 @@ while True:
     elif choice == 4:
         div = a/b
         print(div)
-    elif choice == 5:
-        print("Calculator closed")
-        break
+    elif choice == 1:
+        add = a+b 
+        print(add)
     else:
          continue
 #Exercise 6:Dragon Game

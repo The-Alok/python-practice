@@ -34,24 +34,18 @@ while(count<=10):
 #Mini Project: Calculator
 while True:
     choice = int(input("1-Add,\n 2. Subtract\n, 3. Multiply\n, 4. Divide,\n 5. Exit,\n Choice: "))
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
     if choice == 1:
-        a = int(input("Enter first number: "))
-        b = int(input("Enter second number: "))
         add = a+b 
         print(add)
     elif choice == 2:
-        a = int(input("Enter first number: "))
-        b = int(input("Enter second number: "))
         sub = a-b
         print(sub)
     elif choice == 3:
-        a = int(input("Enter first number: "))
-        b = int(input("Enter second number: "))
         mul = a*b
         print(mul)
     elif choice == 4:
-        a = int(input("Enter first number: "))
-        b = int(input("Enter second number: "))
         div = a/b
         print(div)
     elif choice == 5:
